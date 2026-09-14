@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 import {
+  compressImage
+} from "../services/image";
+import {
   addSurvey
 } from "../services/db";
 
@@ -157,20 +160,73 @@ export default function NewSurvey({
   }
 
 
-  function handlePhoto(event) {
+  async function handlePhoto(event) {
 
-    const file =
-      event.target.files?.[0];
-
-
-    if (!file) {
-      return;
-    }
+  const file =
+    event.target.files?.[0];
 
 
-    setPhoto(file);
+  if (!file) {
+    return;
+  }
+
+
+  try {
+
+    setMessage(
+      "📷 Đang xử lý ảnh..."
+    );
+
+
+    const compressed =
+      await compressImage(
+        file,
+        1280,
+        1280,
+        0.7
+      );
+
+
+    console.log(
+      "Original:",
+      Math.round(
+        file.size / 1024
+      ),
+      "KB"
+    );
+
+
+    console.log(
+      "Compressed:",
+      Math.round(
+        compressed.size / 1024
+      ),
+      "KB"
+    );
+
+
+    setPhoto(
+      compressed
+    );
+
+
+    setMessage(
+      "✓ Đã chụp và lưu ảnh"
+    );
+
+
+  } catch (error) {
+
+    console.error(error);
+
+
+    setMessage(
+      "❌ Không thể xử lý ảnh"
+    );
 
   }
+
+}
 
 
   async function handleSubmit(event) {
