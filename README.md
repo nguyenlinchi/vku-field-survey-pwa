@@ -504,7 +504,6 @@ Google Sheets hiển thị dữ liệu khảo sát và URL ảnh.
 Google Drive chứa ảnh tương ứng.
 
 ![Hình 4 - Đồng bộ dữ liệu](public/screenshots/sync-result.png)
-
 *Figure 4. Kết quả đồng bộ dữ liệu và ảnh.*
 
 ---
