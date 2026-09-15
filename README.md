@@ -466,7 +466,7 @@ Phần này cung cấp bằng chứng thực tế về các chức năng chính 
 * Thông tin sinh viên.
 * Các câu hỏi khảo sát.
 * Nút lưu khảo sát.
-**![alt text](image.png)**
+![Hình 1 - Giao diện biểu mẫu khảo sát](public/screenshots/survey-form.png)
 
 *Figure 1. Giao diện tạo phiên khảo sát.*
 
@@ -480,7 +480,7 @@ Phần này cung cấp bằng chứng thực tế về các chức năng chính 
 * Ảnh khảo sát.
 * Giao diện form.
 
-**![alt text](image-1.png)**
+![Hình 2 - Thu thập GPS và hình ảnh](public/screenshots/gps-photo.png)
 
 *Figure 2. Chức năng lấy vị trí GPS và ảnh khảo sát.*
 
@@ -489,7 +489,7 @@ Phần này cung cấp bằng chứng thực tế về các chức năng chính 
 ## 11.3. Screenshot 3 – Offline Mode
 
 **Mục đích:** Chứng minh ứng dụng vẫn hoạt động khi không có Internet.
-**![alt text](image-2.png)**
+![Hình 3 - Hoạt động ở chế độ Offline](public/screenshots/offline.png)
 
 *Figure 3. Ứng dụng hoạt động trong chế độ Offline.*
 
@@ -503,7 +503,7 @@ Google Sheets hiển thị dữ liệu khảo sát và URL ảnh.
 
 Google Drive chứa ảnh tương ứng.
 
-**![alt text](image-3.png)**
+![Hình 4 - Đồng bộ dữ liệu](public/screenshots/sync-result.png)
 
 *Figure 4. Kết quả đồng bộ dữ liệu và ảnh.*
 
